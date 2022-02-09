@@ -102,7 +102,6 @@ export default defineComponent({
             this.$store.commit("addProducts", this.form)
           }
           this.handleClose()
-        }
 
     },
     handleClose() {
