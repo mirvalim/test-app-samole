@@ -95,9 +95,7 @@ export default defineComponent({
   methods:{
 
     saqlash() {
-      let form = this.$refs["form"];
-      form.validate(valid => {
-        if (valid) {
+
           if (this.form.id) {
             this.$store.commit("editProducts", this.form)
           } else {
@@ -105,7 +103,7 @@ export default defineComponent({
           }
           this.handleClose()
         }
-      })
+
     },
     handleClose() {
       this.form = {
