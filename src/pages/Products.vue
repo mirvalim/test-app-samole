@@ -48,21 +48,6 @@
         </q-card-actions>
       </q-card>
     </q-dialog>
-    <div class="q-py-lg q-px-md">
-      <q-input bottom-slots v-model="newFoodContent" label="whats happening" counter maxlength="12" :dense="dense">
-        <template v-slot:before>
-          <q-avatar>
-            <img src="https://cdn.quasar.dev/img/avatar5.jpg">
-          </q-avatar>
-        </template>
-
-
-
-        <template v-slot:after>
-          <q-btn color="primary" rounded :disable="!newFoodContent" label="Food" />
-        </template>
-      </q-input>
-    </div>
     <div class="q-pa-md">
       <div ref="myListRef" class="row justify-center q-gutter-sm">
         <q-intersection
